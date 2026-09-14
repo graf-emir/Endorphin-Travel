@@ -32,6 +32,10 @@ html {
   padding: 0px 15px;
 }
 
+h4 {
+  color: #29465d;
+}
+
 a {
   background-color: #ffffff;
   color: #003b57;
@@ -404,13 +408,30 @@ span {
   text-align: center;
 }
 
+#mainh {
+  color: #2c3b3d;
+}
+
 .host-text {
   width: 100%;
   text-align: left;
 }
 
+.host-text h2 {
+  text-align: center;
+  padding: 15px 0 5px;
+}
+
 .connectingBro p {
-  text-align: justify;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 450;
+  margin: -24px 0 0;
+  color: #ffffff;
+}
+
+.connectingBro .mainp {
+  text-align: left;
   font-size: 1.3rem;
   font-weight: 450;
   margin: 0;
@@ -543,7 +564,6 @@ span {
   }
 
   .host-text {
-    text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -551,7 +571,7 @@ span {
   .host-media-slider {
     width: 100%;
     max-width: 380px; 
-    min-height: 400px;
+    min-height: 330px;
     margin: 0 auto; 
   }
 
@@ -792,10 +812,28 @@ span {
 
 .soc {
   place-self: center;
-  min-width: 60px;
-  min-height: 60px;
+  width: 60px; /* Фиксированная ширина вместо min-width */
+  height: 60px; /* Фиксированная высота вместо min-height */
   border-radius: 20px;
-  line-height: 1;
+}
+
+.wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #f0f0f0;
+}
+
+.wa-icon {
+  fill: #4eb84e;
+  width: 45px;
+  height: 48px;
+  transition: fill 0.3s ease;
+}
+
+.wa-icon:hover {
+  fill: #0b890b;
 }
 
 .insta-link {
@@ -805,8 +843,8 @@ span {
 }
 
 .inst svg {
-  fill: #cc5dce; /* Ваш цвет иконки по умолчанию (например, серый) */
-  transition: fill 0.3s ease; /* Плавный переход цвета */
+  fill: #cc5dce;
+  transition: fill 0.3s ease;
 }
 
 /* Цвет при наведении мыши */
@@ -818,6 +856,7 @@ span {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  background-color: #f0f0f0;
   text-decoration: none;
   transition: fill 0.3s ease;
 }
@@ -1124,18 +1163,3 @@ h1 {
 .general-inf {
   text-align: justify;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*ПРОБНЫЕ ВАРИАНТЫ ПАЛИТРЫ*/
-
