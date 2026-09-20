@@ -191,13 +191,14 @@ span {
   }
 }
 
-.logo img {
-  position: absolute;
-  top: 15px;
-  left: 15px;
+
+.logo2 img {
+  position: relative;
+  top: 10px;
+  right: 20px;
   z-index: 3;
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 500px;
+  max-height: 140px;
 }
 
 /* Текстовый контент поверх фонового слайдера */
@@ -873,6 +874,8 @@ span {
 
 .footerInfo p{
   color: #fff3cd;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .footer-title {
@@ -883,7 +886,7 @@ span {
 }
 
 a.email-link{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -894,6 +897,7 @@ a.email-link:hover {
 
 .footer-email-container {
   align-self: center;
+  margin-top: 10px;
 }
 
 .copy-btn {
@@ -946,6 +950,7 @@ a.email-link:hover {
 
 .contact-item {
   align-self: center;
+  padding: 0 0 5px;
 }
 
 .phone-link {
@@ -957,6 +962,13 @@ a.email-link:hover {
 
 .phone-link:hover {
   text-decoration: underline;
+}
+
+.fi {
+  padding: 0;
+  font-size: 31px;
+  right: 47px;
+  background-color: #ffffff00;
 }
 
 .details-header {

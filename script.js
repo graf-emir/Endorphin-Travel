@@ -247,22 +247,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //////////////////////////////////////////////////////////////
 
-document.querySelector('.copy-phone-btn').addEventListener('click', function() {
-    // Получаем номер телефона из атрибута data-phone
-    const phoneNumber = this.getAttribute('data-phone');
-    
-    // Копируем текст в буфер обмена
-    navigator.clipboard.writeText(phoneNumber).then(() => {
-        // Здесь можно настроить уведомление для пользователя
-    }).catch(err => {
-        console.error('Ошибка при копировании: ', err);
+// Находим абсолютно все кнопки с классом .copy-phone-btn
+document.querySelectorAll('.copy-phone-btn').forEach(button => {
+    // Вешаем событие клика на КАЖДУЮ кнопку
+    button.addEventListener('click', function() {
+        // Получаем номер телефона из атрибута data-phone конкретно этой кнопки
+        const phoneNumber = this.getAttribute('data-phone');
+        
+        // Копируем текст в буфер обмена
+        navigator.clipboard.writeText(phoneNumber).then(() => {
+            // Здесь можно настроить уведомление для пользователя (например, менять иконку или выводить текст)
+            console.log('Скопировано:', phoneNumber);
+        }).catch(err => {
+            console.error('Ошибка при копировании: ', err);
+        });
     });
 });
+
 
 ///////////////////////////////////////////////////////////////////
 
 function copyEmail() {
-    navigator.clipboard.writeText('mememe@gmail.com');
+    navigator.clipboard.writeText('endorphin.travels@gmail.com');
 }
 
 ///////////////////////////////////////////////////////////////////
