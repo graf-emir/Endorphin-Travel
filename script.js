@@ -225,13 +225,16 @@ function initHostSlider() {
     let currentIndex = 0;
     
     function showSlide(index) {
+        // Правильное зацикливание индекса
+        let newIndex = index;
+        if (newIndex >= slides.length) newIndex = 0;
+        if (newIndex < 0) newIndex = slides.length - 1;
+        
+        // Снимаем класс с текущего слайда
         slides[currentIndex].classList.remove('media-active');
-        currentIndex = index;
         
-        // Зацикливание слайдера
-        if (currentIndex >= slides.length) currentIndex = 0;
-        if (currentIndex < 0) currentIndex = slides.length - 1;
-        
+        // Устанавливаем новый индекс и добавляем класс
+        currentIndex = newIndex;
         slides[currentIndex].classList.add('media-active');
     }
     
