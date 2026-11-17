@@ -212,6 +212,7 @@ span {
   border-radius: 20px;
   max-width: 600px;
   width: 90%;
+  height: 50%;
   backdrop-filter: blur(7px); /* Легкое размытие заднего фона для премиального вида */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
@@ -255,8 +256,8 @@ span {
     position: relative;
     font-size: 1.1rem;
     color: #ceecf8;
-    margin-bottom: 20px;
-    top: -10px;
+    margin-bottom: 0px;
+    top: -20px;
 }
 
 .see-tours-btn {
@@ -491,7 +492,7 @@ span {
   position: relative;
   width: 100%;
   max-width: 480px;
-  height: 520px;
+  min-height: 320px;
   background-color: #000;
   border-radius: 15px;
   overflow: hidden;
