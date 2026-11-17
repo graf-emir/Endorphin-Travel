@@ -212,7 +212,7 @@ span {
   border-radius: 20px;
   max-width: 600px;
   width: 90%;
-  height: 50%;
+  height: 220px;
   backdrop-filter: blur(7px); /* Легкое размытие заднего фона для премиального вида */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
@@ -227,6 +227,7 @@ span {
   border-radius: 20px;
   max-width: 600px;
   width: 90%;
+  min-height: 270px;
   backdrop-filter: blur(7px); /* Легкое размытие заднего фона для премиального вида */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
